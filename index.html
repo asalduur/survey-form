@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Skincare Regimen Survey</title>
+        <meta name="description" content="Survey Form">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="main">
+            <header class="header">
+                <h1 id="title">Skincare Regimen Survey</h1>
+                <p id="description">Thank you for helping us understand your skincare concerns</p>
+                <hr class="sep-2">
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="form-control"
+                        placeholder="Enter your name" 
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        required 
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age</label>
+                    <input
+                        type="number" 
+                        id="number"
+                        name="age"
+                        min="10"
+                        max="99"
+                        class="form-control"
+                        placeholder="Enter your age"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <p>What is your skin type like?
+                        <span class="clue">(Select all that applies)</span>
+                    </p>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="oily"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Oily
+                    </label>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="dry"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Dry
+                    </label>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="combination"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Combination
+                    </label>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="sensitive"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Sensitive
+                    </label>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="acne"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Acne-prone
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>What are your skin concerns?
+                        <span class="clue">(Select all that applies)</span>
+                    </p>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="pores"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Enlarged Pores / Texture irregularity
+                    </label>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="complexion"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Hyperpigmentation / Rosacea 
+                    </label>
+                    <label>
+                        <input
+                            name="skin-type"
+                            value="aging"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
+                        Aging skin / Fine-lines
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>What is your budget for skincare?</p>
+                    <label id="number-label" for="number">
+                        <input
+                            type="number" 
+                            id="name"
+                            name="budget"
+                            min="10"
+                            max="299"
+                            class="form-control"
+                            required
+                        />
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Does your regimen include a double-cleansing step?</p>
+                    <select 
+                        id="dropdown" 
+                        name="step"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value>Click for options</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>How likely are you to adapt to a multi-step regimen?</p>
+                    <label>
+                        <input
+                           name="likey"
+                           value="very"
+                           type="radio"
+                           class="input-radio"
+                           checked
+                        /> Very likely
+                    </label>
+                    <label>
+                        <input
+                           name="likey"
+                           value="somewhat"
+                           type="radio"
+                           class="input-radio"
+                        /> Somewhat likely
+                    </label>
+                    <label>
+                        <input
+                           name="likey"
+                           value="not"
+                           type="radio"
+                           class="input-radio"
+                        /> Not very likely
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Do you use sunscreen daily?</p>
+                    <select 
+                        id="daily" 
+                        name="sunscreen"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value>Click for options</option>
+                        <option value="haa">Yes</option>
+                        <option value="ofc">Of course, I do</option>
+                        <option value="nodoubt">No...doubt</option>
+                    </select>
+                </div>
+                    
+                <div class="form-group">
+                    <p> Anything else you would like to add?</p>
+                    <textarea 
+                        id="comments" 
+                        class="input-textarea" 
+                        name="comment">
+                    </textarea>
+                </div>
+                <div class="form-control">
+                    <button
+                        type="submit"
+                        id="submit"
+                        class=submit>
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

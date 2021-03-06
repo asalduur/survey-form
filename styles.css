@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Sofia&display=swap');
+
+        :root {
+            --color-white: #cdf7db;
+            --color-light: #7fe3a1;
+            --color-midtone: #1bab4c;
+            --color-dark: #00270d;
+            --color-black: #001406;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            font-family: 'Mukta', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--color-black);
+            background-image: url('https://images.unsplash.com/photo-1502810365585-56ffa361fdde?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: var(--color-white);
+            opacity: 0.9;
+            width: 600px;
+            margin: auto;
+        }
+        main {
+            position: relative;
+            background-color: var(--color-white);
+            padding: 0.5em;
+            border-radius: 0.25rem;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            padding: 10px;
+            font-family: 'Sofia', cursive;
+            color: var(--color-midtone);
+            text-shadow: 0.25px 3px var(--color-black);
+        }
+        .header {
+            text-align: center;
+            background-color: var(--color-white);
+            box-shadow: 0 0 10px var(--color-dark);
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        /* <hr> by Delonnkoh */
+
+        hr.sep-2 {
+            border: 0; 
+            height: 1.45px; 
+            background-image: linear-gradient(to right, #00a048, #00b9ff, #59d941, #48baa4);
+        }
+        form {
+            padding: 0.625rem;
+            border-radius: 0.25rem;
+            background-color: var(--color-white);
+            box-shadow: 0 5px 10px var(--color-dark);
+        }
+        .form-group {
+            margin: 0 auto 1.25rem auto;
+            padding: 0.25rem;
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            color: var(--color-black);
+            border-radius: 0.25rem;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        input,
+        button,
+        select,
+        textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+        button {
+            border: none;
+        }
+        .input-radio,
+        .input-checkbox {
+            display: inline-block;
+            margin-right: 0.625rem;
+            min-height: 1.25rem;
+            min-width: 1.25rem;
+        }
+
+        .input-textarea {
+            min-height: 120px;
+            width: 100%;
+            padding: 0.625rem;
+            resize: vertical;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--color-light);
+            color: var(--color-black);
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        button:hover {
+            transform: scale(0.9);
+            background-color: var(--color-midtone);
+        }
